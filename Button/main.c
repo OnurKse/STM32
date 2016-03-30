@@ -47,12 +47,12 @@ int main(){
 	while(1)
 	{
 		if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0))
-			{
-				GPIO_SetBits(GPIOD, GPIO_Pin_13);
-			}
+		{
+			GPIO_SetBits(GPIOD, GPIO_Pin_13);
+		}
 		else
-			{
-				GPIO_ResetBits(GPIOD, GPIO_Pin_13);
-			}
+		{
+			GPIO_ResetBits(GPIOD, GPIO_Pin_13);
+		}
 	 }
 }
