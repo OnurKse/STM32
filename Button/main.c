@@ -36,14 +36,7 @@ int main(){
 		while (1);
 	}
 	init_GPIO();
-	for(i = 0; i < 2; i++)
-	{
-		GPIO_SetBits(GPIOD, GPIO_Pin_12);
-		delay_ms(200);
-		GPIO_ResetBits(GPIOD, GPIO_Pin_12);
-		delay_ms(100);
-	}	
-
+	
 	while(1)
 	{
 		if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0))
