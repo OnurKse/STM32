@@ -28,7 +28,7 @@ void init_GPIO(void)
 int main(void)
 {
 	init_GPIO();
-
+	
 	while(1)
 	{
 		if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0))
