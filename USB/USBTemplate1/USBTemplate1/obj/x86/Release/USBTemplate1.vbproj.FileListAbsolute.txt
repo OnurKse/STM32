@@ -1,0 +1,9 @@
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\bin\x86\Release\USBTemplate1.exe
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\bin\x86\Release\USBTemplate1.pdb
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\bin\x86\Release\USBTemplate1.xml
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Release\USBTemplate1.frmUSB.resources
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Release\USBTemplate1.Resources.resources
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Release\USBTemplate1.vbproj.GenerateResource.Cache
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Release\USBTemplate1.exe
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Release\USBTemplate1.xml
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Release\USBTemplate1.pdb

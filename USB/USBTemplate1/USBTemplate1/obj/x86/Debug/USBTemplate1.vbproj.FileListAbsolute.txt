@@ -1,0 +1,35 @@
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\bin\x86\Debug\USBTemplate1.exe
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\bin\x86\Debug\USBTemplate1.pdb
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\bin\x86\Debug\USBTemplate1.xml
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.frmUSB.resources
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.Resources.resources
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.vbproj.GenerateResource.Cache
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.exe
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.xml
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.pdb
+c:\users\onuur\documents\visual studio 2015\Projects\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.vbprojResolveAssemblyReference.cache
+D:\Dosyalar\Elektronik\STM32F103C8T6\mikroC\usb_hid\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.exe
+D:\Dosyalar\Elektronik\STM32F103C8T6\mikroC\usb_hid\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.xml
+D:\Dosyalar\Elektronik\STM32F103C8T6\mikroC\usb_hid\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.pdb
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\bin\x86\Debug\USBTemplate1.exe
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\bin\x86\Debug\USBTemplate1.pdb
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\bin\x86\Debug\USBTemplate1.xml
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.vbprojAssemblyReference.cache
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.frmUSB.resources
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.Resources.resources
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.vbproj.GenerateResource.cache
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.vbproj.CoreCompileInputs.cache
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.exe
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.xml
+C:\Users\onuur\Desktop\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.pdb
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\bin\x86\Debug\USBTemplate1.exe
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\bin\x86\Debug\USBTemplate1.pdb
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\bin\x86\Debug\USBTemplate1.xml
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.vbprojAssemblyReference.cache
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.frmUSB.resources
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.Resources.resources
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.vbproj.GenerateResource.cache
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.vbproj.CoreCompileInputs.cache
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.exe
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.xml
+C:\Users\onuur\OneDrive\STM32F103C8T6\CubeMx\usb\USBTemplate1\USBTemplate1\obj\x86\Debug\USBTemplate1.pdb
