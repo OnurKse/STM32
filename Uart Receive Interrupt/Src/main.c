@@ -50,6 +50,7 @@ UART_HandleTypeDef huart1;
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 char veri[5];
+char buffer_tx[7];
 int led;
 //uint8_t buffer_tx[10] = {10,11,12,13,14,15,16,17,18,19};
 /* USER CODE END PV */
@@ -77,16 +78,20 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	if(strcmp(veri, "led:1") == 0)
 	{
 		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+		strcpy(buffer_tx, "opened\n");
 		printf("led opened\n");	
 		led = 1;
 	}
 	else if(strcmp(veri, "led:0") == 0)
 	{
 		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+		strcpy(buffer_tx, "closed\n");
 		printf("led closed\n");
 		led = 0;
 	}
-	HAL_UART_Transmit(&huart1, (uint8_t*)veri, sizeof(veri), 100);
+	HAL_UART_Transmit(&huart1, (uint8_t*)buffer_tx, sizeof(buffer_tx), 100);
+	strcpy(veri, "     ");
+	HAL_UART_Receive_IT(&huart1, (uint8_t*)veri, sizeof(veri));
 }
 /* USER CODE END 0 */
 
@@ -121,6 +126,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+	HAL_UART_Receive_IT(&huart1, (uint8_t*)veri, sizeof(veri));
 	
 	//HAL_UART_Transmit_IT(&huart1, buffer_tx, 10);
   /* USER CODE END 2 */
@@ -129,7 +135,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		HAL_UART_Receive_IT(&huart1, (uint8_t*)veri, sizeof(veri));
+		
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
@@ -220,6 +226,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13|GPIO_PIN_14, GPIO_PIN_RESET);
