@@ -171,9 +171,6 @@ int main(void)
 
 	send_data("AT+CWMODE?\r\n");
 	wait_data();
-
-	//send_data("AT+CWJAP=\"TurkTelekom_ZHE97\",\"2545f4c4e9972\"\r\n");
-	//wait_data();
 	
 	send_data("AT+CIFSR\r\n");
 	wait_data();
@@ -209,7 +206,7 @@ int main(void)
 		wait_data();
 		if(strchr((char *)buffer_rx, '>') != 0)
 		{
-			sprintf(debug, "GET /update?api_key=XB4BYYQ3KKLS7O97&field1=%.2f\r\n\r\n", total_temp);
+			sprintf(debug, "GET /update?api_key=.................&field1=%.2f\r\n\r\n", total_temp);
 			send_data(debug);
 			wait_data();
 		}
