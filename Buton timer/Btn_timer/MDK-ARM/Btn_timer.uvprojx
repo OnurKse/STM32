@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>ds18</TargetName>
+      <TargetName>Btn_timer</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
@@ -16,8 +16,8 @@
         <TargetCommonOption>
           <Device>STM32F407VGTx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.14.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>Keil.STM32F4xx_DFP.2.13.0</PackID>
+          <PackURL>http://www.keil.com/pack</PackURL>
           <Cpu>IRAM(0x20000000-0x2001FFFF) IRAM2(0x10000000-0x1000FFFF) IROM(0x8000000-0x80FFFFF)  CLOCK(25000000) FPU2 CPUTYPE("Cortex-M4")</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -48,8 +48,8 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>ds18\</OutputDirectory>
-          <OutputName>ds18</OutputName>
+          <OutputDirectory>Btn_timer\</OutputDirectory>
+          <OutputName>Btn_timer</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -336,9 +336,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_HAL_DRIVER,STM32F407xx,USE_HAL_DRIVER,STM32F407xx</Define>
+              <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy; ../Drivers/CMSIS/Device/ST/STM32F4xx/Include; ../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Inc;  ../Drivers/STM32F4xx_HAL_Driver/Inc;  ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;  ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc;  ../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc;  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include;  ../Drivers/CMSIS/Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -393,19 +393,24 @@
           <GroupName>Application/User</GroupName>
           <Files>
             <File>
-              <FileName>dwt_stm32_delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\dwt_stm32_delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32_onewire.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\stm32_onewire.c</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/main.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_host.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/usb_host.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbh_conf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/usbh_conf.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbh_platform.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Src/usbh_platform.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_it.c</FileName>
@@ -423,6 +428,41 @@
           <GroupName>Drivers/STM32F4xx_HAL_Driver</GroupName>
           <Files>
             <File>
+              <FileName>stm32f4xx_hal_hcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_ll_usb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_i2c_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_i2s.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_i2s_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_hal_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c</FilePath>
+            </File>
+            <File>
               <FileName>stm32f4xx_hal_tim.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c</FilePath>
@@ -431,11 +471,6 @@
               <FileName>stm32f4xx_hal_tim_ex.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_hal_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_hal_rcc.c</FileName>
@@ -497,11 +532,6 @@
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c</FilePath>
             </File>
-            <File>
-              <FileName>stm32f4xx_hal_exti.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -511,6 +541,36 @@
               <FileName>system_stm32f4xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/system_stm32f4xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Middlewares/USB_Host_Library</GroupName>
+          <Files>
+            <File>
+              <FileName>usbh_core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbh_ctlreq.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ctlreq.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbh_ioreq.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_ioreq.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbh_pipes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/ST/STM32_USB_Host_Library/Core/Src/usbh_pipes.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbh_cdc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -527,28 +587,28 @@
   <RTE>
     <apis/>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.3.0" condition="ARMv6_7_8-M Device">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.6.0"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.1.2" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.4.0"/>
         <targetInfos>
-          <targetInfo name="ds18"/>
+          <targetInfo name="Btn_timer"/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDERR" Cvariant="ITM" Cvendor="Keil" Cversion="1.2.0" condition="ARMCC Cortex-M with ITM">
-        <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.1"/>
+        <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
         <targetInfos>
-          <targetInfo name="ds18"/>
+          <targetInfo name="Btn_timer"/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDIN" Cvariant="ITM" Cvendor="Keil" Cversion="1.2.0" condition="ARMCC Cortex-M with ITM">
-        <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.1"/>
+        <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
         <targetInfos>
-          <targetInfo name="ds18"/>
+          <targetInfo name="Btn_timer"/>
         </targetInfos>
       </component>
       <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDOUT" Cvariant="ITM" Cvendor="Keil" Cversion="1.2.0" condition="ARMCC Cortex-M with ITM">
-        <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.6.1"/>
+        <package name="ARM_Compiler" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
         <targetInfos>
-          <targetInfo name="ds18"/>
+          <targetInfo name="Btn_timer"/>
         </targetInfos>
       </component>
     </components>
